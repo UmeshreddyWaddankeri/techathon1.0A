@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKnights - Team Login</title>
+    
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"></script>
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="branding">
+            <h1>TechKnights</h1>
+            <p>Join the team and explore endless possibilities.</p>
+        </div>
+    
+        <div class="login-container">
+            <h2>Welcome to TechKnights</h2>
+            <p>Login using your TechKnights Google Account</p>
+    
+            <!-- Google Sign-In Button -->
+            <div id="g_id_onload"
+                data-client_id="539253118811-3178n5av79jbdosl2oe4j6uj45njhbhc.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
+    
+            <a href="homepage.html" class="back-home">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="loginscript.js"></script>
+</body>
+</html>
